@@ -1,0 +1,544 @@
+.commonStyle{
+    background-color: rgb(101, 156, 185);
+    position: absolute;
+    height: 100%;
+    width: 99.9%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+.layout {
+    width: 60%;
+    /* height: 0px; */
+    margin: 0 auto;
+    border-top: 100px solid #CF9FFF;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+}
+
+.title{
+    text-align: center;
+    margin: -70px auto;
+    font-size: 30px;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.layout1 {
+    height: 40%;
+    border-left: 170px solid #CF9FFF;
+    border-top: 180px solid transparent;
+    border-bottom: 180px solid transparent;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+.layout2 {
+    height: 40%;
+    border-right: 170px solid #CF9FFF;
+    border-top: 180px solid transparent;
+    border-bottom: 180px solid transparent;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+
+}
+
+.layout3 {
+    display: inline-grid;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.centreElement{
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}
+.centreElement table th{
+    border-bottom: 2px solid black;
+    width: 830px;
+    padding: 8px;
+    font-family: 'Lucida Sans Unicode';
+}
+.centreElement table tr td{
+    display: block;
+} 
+ .centreElement table td button{
+    width: 160px; 
+    height: 100px; 
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 23px;
+    background-color: aquamarine;
+    /* border: 1px solid rgb(151, 29, 100); */
+    /* when adding border value instead of only color the button click effect is not working */
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 7px 3px;
+    border-color: #dc9f1d;
+}
+
+.centreElementBtnDiv{
+    display: flex;
+    position: relative;
+}
+.centreElementBtn{
+    width: 160px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    margin: 7px 3px;
+}
+
+
+.centreElement table tr span{
+    position: relative;
+    float: left;
+    font-size: 25px;
+}
+
+.centreElement table tr td span{
+    width: 140px;
+    height: 90px;
+    padding: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 134, 232);
+}
+
+.topBooksTR{
+    display: flex;
+    
+}
+
+.topBooksTR .topBooks{
+    text-align: center;
+}
+
+.topBooksTR .topBooks span{
+    width: 145px;
+}
+.topBooksTR .topBooks button{
+    width: 145px;
+    height: 30px;
+    border-radius: 7px;
+    /* font-size: 18px; */
+    /* font-family: Georgia; */
+    border-color: #dc9f1d;
+    /* border-width: 2px; */
+
+    font-family:'Lucida Sans';
+    font-weight: 220;
+    font-size: 18px;
+}
+/* .ul {
+    list-style: none;
+    margin-left: -50px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    background: #fff;
+    position: relative;
+    display: block;
+    padding: 15px;
+    width: 0;
+    text-align: center;
+    visibility: none;
+} */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+}
+
+ul button {
+    background: #9ae1cb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 165px;
+    border-radius: 20px;
+    /* border-width: 1px; */
+    border-color: rgb(240, 158, 64);
+    margin-bottom: 30px;
+    margin-left: -168px;
+    margin-top: 20px;
+    height: 32px;
+    font-size: 15px;
+    font-family: Georgia;
+    cursor: pointer;
+}
+
+/* ul li {
+    background: #9ae1cb;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: -168px;
+    margin-top: 20px;
+    height: 30px;
+} */
+
+ul span {
+    z-index: 1;
+    /* margin-right: 5px; */
+    display: inline-block;
+    position: relative;
+    /* right: 0px; */
+    opacity: 1;
+    transition: all 1s;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+
+.container {
+    margin-top: 40px;
+    margin-right: -170px;
+    margin-left: 170px;
+}
+
+.lendCartCentre{
+    position: absolute;
+    top: 120px;
+    left: 290px;
+    right: 290px;
+    border-collapse: collapse;
+    margin: 10px 0;
+    min-width: 400px;
+}
+
+.borrowHistory{
+    position: absolute;
+    top: 120px;
+    left: 290px;
+    right: 290px;
+    border-collapse: collapse;
+    margin: 10px 0;
+    min-width: 400px;
+}
+
+.lendCartCentre thead tr{
+    background-color: #ce5a11;
+    color: #e8e5db;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 70px;
+}
+
+.borrowHistory thead tr{
+    background-color: #ce5a11;
+    color: #e8e5db;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 70px;
+}
+
+.lendCartCentre th[scope="col1"]{
+    padding: 12px 110px;
+    text-align: center;
+}
+.lendCartCentre th[scope="col2"]{
+    padding: 12px 125px;
+    text-align: center;
+}
+
+.borrowHistory th[scope="col1"]{
+    padding: 12px 110px;
+    text-align: center;
+}
+.borrowHistory th[scope="col2"]{
+    padding: 12px 125px;
+    text-align: center;
+}
+/* .lendCartCentre tbody tr{
+    background-color: rgb(139, 161, 87);
+} */
+.lendCartCentre td{
+    padding: 12px 25px;
+    text-align: center;
+    text-wrap: wrap;
+}
+.borrowHistory td{
+    padding: 13px 25px;
+    text-align: center;
+    text-wrap: wrap;
+}
+.lendCartCentre tbody tr{
+    border-bottom: 1px solid #1f1d1e;
+    cursor: pointer;
+}
+
+.borrowHistory tbody tr{
+    border-bottom: 1px solid #1f1d1e;
+}
+
+
+.lendCartCentre tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.lendCartCentre tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.lendCartButton{
+    text-align: center; 
+    padding: 10px 15px;
+    background-color:aquamarine;
+    font-family:'Lucida Sans';
+    font-weight: 500;
+    color:#1e172a;
+    cursor:context-menu;
+    border-color: #dc9f1d;
+    margin-right: 30px;
+    /* cursor: pointer; */
+}
+
+.returnCartButton{
+    position: relative;
+    left: 630px;
+    top: 500px;
+    text-align: center; 
+    padding: 10px 15px;
+    background-color:aquamarine;
+    font-family:'Lucida Sans';
+    font-weight: 500;
+    color:#1e172a;
+    /* cursor:context-menu; */
+    border-color: #dc9f1d;
+    margin-right: 30px;
+}
+
+.buttonDiv{
+    position: relative;
+    left: 600px;
+    top: 500px;
+}
+
+.Login{
+    position: absolute;
+    background-color: paleturquoise;
+    /* background-color: rgb(101, 156, 185); */
+    width: 99.9%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    height: 100%;
+
+}
+
+
+.LoginCentre{
+    padding: 100px 10px;
+    position: relative;
+    top: 120px;
+    background-color: whitesmoke;
+    text-align: center;
+    height: 220px;
+    width: 330px;
+    left: 540px;
+    border-radius: 25px;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+
+    border-color: orange;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.RegisterCentre{
+    padding: 100px 10px;
+    position: relative;
+    top: 30px;
+    background-color: whitesmoke;
+    text-align: center;
+    height: 400px;
+    width: 330px;
+    left: 540px;
+    border-radius: 25px;
+    justify-content: center;
+    justify-items: center;
+    border-color: none;
+    display: flex;
+    flex-direction: column;
+
+    border-color: orange;
+    border-width: 2px;
+    border-style:solid;
+}
+
+.LoginSpan{
+    top: -28px;
+    position: relative;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 550;
+    color:dodgerblue;
+}
+
+.RegisterSpan{
+    top: -18px;
+    position: relative;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 550;
+    color:dodgerblue;
+}
+
+.LoginInput{
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(63, 148, 194);
+    margin: 15px 20px;
+    outline: rgb(63, 148, 194);
+    position: relative;
+}
+
+.LoginPwdIcon{
+    position: absolute;
+    top: 205px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.RegisterPwdIcon{
+    position: absolute;
+    top: 405px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.RegisterInput{
+    padding: 13px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(63, 148, 194);
+    margin: 15px 20px;
+    outline: rgb(63, 148, 194);
+    position: relative;
+}
+
+.LoginBtn{
+    padding: 7px 15px;
+    margin:   13px 20px;
+    margin-bottom: 40px;
+    position: relative;
+    border-radius: 5px;
+    /* border-color: orange; */
+    background-color:rgb(30, 179, 221);
+    border-color: rgb(30, 179, 221);
+    top: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+    /* color: rgb(195, 169, 180); */
+}
+
+.ErrorSpan{
+    position: relative;
+    color: red;
+    top: 7px;
+}
+
+.notificationsSpan{
+    position: absolute;
+    top: 300px;
+    left: 310px;
+    padding: 20px 350px;
+    text-align: center;
+    font-size: large;
+    font-family:cursive;
+    background-color: darkkhaki;
+}
+
+.AccountCentre{
+    padding: 100px 10px;
+    position: relative;
+    top: 80px;
+    background-color: whitesmoke;
+    text-align: center;
+    height: 320px;
+    width: 330px;
+    left: 540px;
+    border-radius: 25px;
+    justify-content: center;
+    justify-items: center;
+    border-color: none;
+    display: flex;
+    flex-direction: column;
+
+    border-color: orange;
+    border-width: 2px;
+    border-style:solid;
+}
+
+.AccountPwdIcon{
+    position: absolute;
+    top: 365px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.AccountInput{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(63, 148, 194);
+    margin: 15px 20px;
+    outline: rgb(63, 148, 194);
+    position: relative;
+}
+
+.AccountBtn{
+   
+    padding: 7px 15px;
+    margin:   15px 15px;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+    display: inline-block;
+    
+    background-color:rgb(30, 179, 221);
+    border-color: rgb(30, 179, 221);
+    top: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color:black;
+    
+}
+
+.AccountSpan{
+    top: -10px;
+    position: relative;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 550;
+    color:dodgerblue;
+}
+
+.AccountErrorSpan{
+    position: relative;
+    color: red;
+    top: 5px;
+}
+
+.AccountSuccessSpan{
+    position: relative;
+    color: green;
+    top: 5px;
+}

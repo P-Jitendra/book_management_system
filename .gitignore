@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/bms_frontend/node_modules
+/bms_frontend/package-lock.json
+/.pnp
+/bms_frontend/.pnp.js
+
+# testing
+/bms_frontend/coverage
+
+# production
+/bms_frontend/build
+
+# misc
+/bms_frontend/.DS_Store
+/bms_frontend/.env.local
+/bms_frontend/.env.development.local
+/bms_frontend/.env.test.local
+/bms_frontend/.env.production.local
+
+/bms_frontend/npm-debug.log*
+/bms_frontend/yarn-debug.log*
+/bms_frontend/yarn-error.log*
+
+/bms_backend/go_project.exe
