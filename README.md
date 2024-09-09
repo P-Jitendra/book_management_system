@@ -1,0 +1,141 @@
+# Fullstack Book Management Application
+
+### `Front end tech stack` : ***ReactJs***
+
+### `Back end tech stack` : ***Golang***
+
+### `Database` : ***Postgres***
+
+## Steps to setup book management app
+
+1. Install Docker Desktop in your system(Windows/Mac/Linux)
+2. After opening docker desktop, now run docker-compose file in the repo.
+3. Command to run docker-compose: **docker-compose up -d**
+
+Initially book data will be empty so run the below API in postman to insert dummy data
+1. URL: `localhost:5000/api/new-books-data/`
+2. METHOD: `POST`
+3. Body(JSON): `{
+    "books_data": [
+        {
+            "Title": "Don Quixote",
+            "Author": "Miguel de Cervantes",
+            "Publications": "Dover Publications, New York",
+            "Genre": "Action and Adventure"
+        },
+        {
+            "Title": "The Adventures of Huckleberry Film",
+            "Author": "Mark Twain",
+            "Publications": "Norton, New York",
+            "Genre": "Action and Adventure"
+        },
+        {
+            "Title": "Alice's Adventures in Wonderland",
+            "Author": "Lewis Carroll",
+            "Publications": "Palazzo Editions Ltd",
+            "Genre": "Fantasy"
+        },
+        {
+            "Title": "Gulliver's Travels",
+            "Author": "Jonathan Swift",
+            "Publications": "Knopf : Distributed by Random House, New York",
+            "Genre": "Fantasy"
+        },
+        {
+            "Title": "A tale of Two Cities",
+            "Author": "Charles Dickens",
+            "Genre": "Historical",
+            "Publications": "Knopf : Distributed by Random House, New York"
+        },
+        {
+            "Title": "The Three Musketeers",
+            "Author": "Alexandre Dumas",
+            "Genre": "Historical",
+            "Publications": "Collector's Library, London"
+        },
+        {
+            "Title": "Frankestein, or, the Modern Prometheus",
+            "Author": "Mary Shelley",
+            "Genre": "Horror",
+            "Publications": "University of California Press, Berkeley"
+        },
+        {
+            "Title": "The Phantom of the Opera",
+            "Author": "Gaston Leroux",
+            "Publications": "Harper Perennial Library, New York",
+            "Genre": "Horror"
+        },
+        {
+            "Title": "Pride and Prejudice",
+            "Author": "Jane Austen",
+            "Publications": "Modern Library, New York",
+            "Genre": "Romance"
+        },
+        {
+            "Title": "Jane Eyre",
+            "Author": "Charlotte Bronte",
+            "Publications": "Knopf : Distributed by Random House, New York",
+            "Genre": "Romance"
+        },
+        {
+            "Title": "Science Fiction",
+            "Author": "20,000 Leagues Under the Sea",
+            "Publications": "Sterling Publishing Co.,Inc., New York",
+            "Genre": "Science Fiction"
+        },
+        {
+            "Title": "Fahrenheit 451",
+            "Author": "Ray Bradbury",
+            "Publications": "Ballantine Books, New York",
+            "Genre": "Science Fiction"
+        },
+        {
+            "Title": "Angels & Demons",
+            "Author": "Dan Brown",
+            "Publications": "Atria Books, New York",
+            "Genre": "Thrillers"
+        },
+        {
+            "Title": "The Girl with Dragon Tattoo",
+            "Author": "Stieg Larsson",
+            "Publications": "Alfred A. Knopf, New York",
+            "Genre": "Thrillers"
+        },
+        {
+            "Title": "A Farewell to Arms",
+            "Author": "Ernest Hemingway",
+            "Publications": "Scribner Classics, New York",
+            "Genre": "War"
+        },
+        {
+            "Title": "All Quiet on the Western Front",
+            "Author": "Erich Maria Remarque",
+            "Publications": "Vintage, London",
+            "Genre": "War"
+        },
+        {
+            "Title": "Uncle Tom's Cabin",
+            "Author": "Harriet Beecher Stowe",
+            "Publications": "A.A. Knopf, New York",
+            "Genre": "Political"
+        },
+        {
+            "Title": "Animal Farm",
+            "Author": "George Orwell",
+            "Publications": "Harcourt, Brace and Company, New York",
+            "Genre": "Political"
+        },
+        {
+            "Title": "The Complete Sherlock Holmes",
+            "Author": "Arthur Conan Doyle",
+            "Publications": "Doubleday & Company, Inc., Garden City, New York",
+            "Genre": "Mystery/Detective"
+        },
+        {
+            "Title": "The Da Vinci Code",
+            "Author": "Dan Brown",
+            "Publications": "Doubleday, New York",
+            "Genre": "Mystery/Detective"
+        }
+    ]
+}`
