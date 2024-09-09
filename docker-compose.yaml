@@ -20,7 +20,7 @@ services:
   backend:
     build:
       context: ./bms_backend
-      dockerfile: ./bms_backend/Dockerfile
+      dockerfile: ./Dockerfile
     ports:
       - "5000:5000"
     depends_on:
@@ -36,7 +36,7 @@ services:
   frontend:
     build:
       context: ./bms_frontend
-      dockerfile: ./bms_frontend/Dockerfile
+      dockerfile: ./Dockerfile
     ports:
       - "3000:3000"
     depends_on:

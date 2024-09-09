@@ -65,7 +65,7 @@ function Register() {
           type="email"
           id="Email"
           placeholder="Email"
-          autoComplete="offs"
+          autoComplete="off"
           onChange={(e) => setEmail(e.target.value)}
           className={style.RegisterInput}
         />
