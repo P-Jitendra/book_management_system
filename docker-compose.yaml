@@ -41,7 +41,8 @@ services:
       - "3000:3000"
     depends_on:
       - backend
-    command: npm start
+    tty: true
+    command: '/bin/sh -c "curl -i -g -H\"Content-Type: application/json\" -d@book_data.json -XPOST http://backend:5000/api/new-books-data && /bin/sh"'
 
 volumes:
   pgdata:
